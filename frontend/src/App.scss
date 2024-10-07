@@ -1,0 +1,84 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 40px;
+  background: url('./images/background.jpg') no-repeat center center; // Use the background image
+  background-size: cover; // Cover the entire area
+  min-height: 100vh; // Ensure content area covers the full height
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-dashboard {
+  background: linear-gradient(135deg, rgba(11, 61, 145, 0.8), rgba(26, 115, 232, 0.8)); // Add slight transparency to maintain background visibility
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.patient-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.patient-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 15%;
+  margin-right: 30px;
+}
+
+.patient-info h2,
+.patient-info p {
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboard-item {
+  background: linear-gradient(135deg, #4CAF50, #1A73E8);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 16px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  background: linear-gradient(135deg, #2E7D32, #0D47A1);
+}
+
+.dashboard-item h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.dashboard-item p {
+  font-size: 2rem;
+  color: #FFF;
+}

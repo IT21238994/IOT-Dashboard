@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../images/NavBar.png') no-repeat center center; // Use the image as the background
+    background-size: cover; // Cover the entire navbar with the image
+    padding: 5px 10px;  // Reduce padding to reduce height
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-sizing: border-box;
+    height: 60px;  // Set overall height
+}
+
+/* Remove circle designs */
+.navbar::before, 
+.navbar::after,
+.navbar .circle-blue-dark,
+.navbar .circle-white-small,
+.navbar .circle-lightblue-medium,
+.navbar .circle-blue-light {
+    display: none; // Remove any existing circles
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    position: relative;  // Ensures content stays above the design
+    z-index: 1;  // Make sure content appears above any design patterns
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;  // Reduce size for logo visibility
+    margin-right: 15px;
+    object-fit: contain;  // Ensure the logo fits inside its container
+}
+
+.app-name {
+    font-size: 1.3rem;  // Adjust the size of the app name to fit the smaller navbar
+    margin: 0;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    font-size: 1.6rem;  // Slightly reduce font size for time
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.separator {
+    font-size: 1.3rem;  // Adjust separator size
+    margin-right: 10px;
+}
+
+.date-day {
+    text-align: center;
+}
+
+.date {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.day {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    margin-right: 10px;
+    text-align: right;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.user-admin {
+    height: 37px;  // Slightly reduce the profile picture size
+    width: 37px;
+    border-radius: 50%;  // Circular profile picture
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+.signout-icon {
+    margin-left: 15px;
+    font-size: 25px;  // Reduce size of signout icon
+    cursor: pointer;
+    color: white;  // Ensure signout icon is visible
+}
