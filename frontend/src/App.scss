@@ -73,6 +73,16 @@
   background: linear-gradient(135deg, #2E7D32, #0D47A1);
 }
 
+.blink-red {
+  background-color: red !important;  // Change the background to red when blinking
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 .dashboard-item h3 {
   margin-top: 20px;
   font-size: 1.2rem;
